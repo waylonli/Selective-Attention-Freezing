@@ -57,10 +57,13 @@ def test_manifest_commands():
 
 
 def test_no_private_assets():
+    import subprocess
     root = Path(__file__).resolve().parents[1]
-    for path in root.rglob("*"):
-        if not path.is_file() or any(part in {".git", "__pycache__", ".pytest_cache"} for part in path.parts):
-            continue
+    if not (root / ".git").exists():
+        pytest.skip("Source hygiene checks require a Git checkout")
+    names = subprocess.check_output(["git", "ls-files", "-z"], cwd=root).decode().split("\0")
+    for name in filter(None, names):
+        path = root / name
         assert path.suffix not in {".csv", ".pt", ".pth", ".bin", ".sbatch", ".pdf"}
         text = path.read_text()
         assert "/" + "projects/" not in text

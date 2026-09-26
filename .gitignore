@@ -19,3 +19,4 @@ wandb/
 .env.*
 data/**/metadata.json
 data/**/meta.pkl
+data/release/

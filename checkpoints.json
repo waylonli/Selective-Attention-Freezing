@@ -1,5 +1,5 @@
 {
-  "status": "not_uploaded",
+  "status": "partial",
   "models": [
     {
       "group": "124m-finetuning",
@@ -11,7 +11,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1337-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1337-full/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1337-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -23,7 +24,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1337-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1337-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1337-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -35,7 +37,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1337-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1337-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1337-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -47,7 +50,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1338-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1338-full/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1338-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -59,7 +63,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1338-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1338-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1338-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -71,7 +76,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1338-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1338-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1338-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -83,7 +89,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1339-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1339-full/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1339-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -95,7 +102,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1339-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1339-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1339-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -107,7 +115,8 @@
       "max_length": 512,
       "id": "124m-boolq-s1339-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-boolq-s1339-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-boolq-s1339-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -119,7 +128,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1337-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1337-full/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1337-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -131,7 +141,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1337-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1337-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1337-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -143,7 +154,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1337-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1337-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1337-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -155,7 +167,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1338-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1338-full/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1338-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -167,7 +180,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1338-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1338-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1338-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -179,7 +193,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1338-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1338-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1338-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -191,7 +206,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1339-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1339-full/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1339-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -203,7 +219,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1339-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1339-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1339-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -215,7 +232,8 @@
       "max_length": 128,
       "id": "124m-sst2-s1339-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-sst2-s1339-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-sst2-s1339-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -227,7 +245,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1337-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1337-full/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1337-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -239,7 +258,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1337-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1337-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1337-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -251,7 +271,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1337-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1337-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1337-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -263,7 +284,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1338-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1338-full/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1338-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -275,7 +297,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1338-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1338-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1338-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -287,7 +310,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1338-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1338-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1338-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -299,7 +323,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1339-full",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1339-full/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1339-full/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -311,7 +336,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1339-inherited_mean25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1339-inherited_mean25/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1339-inherited_mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-finetuning",
@@ -323,7 +349,8 @@
       "max_length": 16384,
       "id": "124m-quality-s1339-inherited_mean50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-finetuning/124m-quality-s1339-inherited_mean50/model.pt"
+      "upload_path": "124m-finetuning/124m-quality-s1339-inherited_mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -335,7 +362,8 @@
       "run_id": "p0-baseline-124m-c4096-rope-s1337",
       "id": "124m-t4096-s1337-ordinary",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1337-ordinary/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -347,7 +375,8 @@
       "run_id": "p1_rate_frontier-124m-c4096-rope-s1337-mean_r25",
       "id": "124m-t4096-s1337-saf25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1337-saf25/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1337-saf25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -359,7 +388,8 @@
       "run_id": "p1_rate_frontier-124m-c4096-rope-s1337-mean_r50",
       "id": "124m-t4096-s1337-saf50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1337-saf50/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1337-saf50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -371,7 +401,8 @@
       "run_id": "p0-baseline-124m-c4096-rope-s1338",
       "id": "124m-t4096-s1338-ordinary",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1338-ordinary/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1338-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -383,7 +414,8 @@
       "run_id": "p0-baseline-124m-c4096-rope-s1339",
       "id": "124m-t4096-s1339-ordinary",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1339-ordinary/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1339-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -394,8 +426,13 @@
       "rate": 0.0,
       "run_id": "v2-5a-baseline-124m-c16384-rope-s1337",
       "id": "124m-t16384-s1337-ordinary",
-      "identity_status": "recorded",
-      "upload_path": "124m-pretraining/124m-t16384-s1337-ordinary/model.pt"
+      "identity_status": "server_hash_verified",
+      "upload_path": "124m-pretraining/124m-t16384-s1337-ordinary/model.pt",
+      "status": "uploaded",
+      "export_sha256": "d861032f096f0fd3df14eac659b4e3b750f2f7d18dc5329e5fc60ad953fe8125",
+      "export_bytes": 573035063,
+      "hf_revision": "507d2a78eba45c4a896fcac1e479fe24b3f5022a",
+      "forward_verified": true
     },
     {
       "group": "124m-pretraining",
@@ -406,8 +443,13 @@
       "rate": 0.25,
       "run_id": "v2-5b-124m-c16384-rope-s1337-mean_r25_t50",
       "id": "124m-t16384-s1337-saf25",
-      "identity_status": "recorded",
-      "upload_path": "124m-pretraining/124m-t16384-s1337-saf25/model.pt"
+      "identity_status": "server_hash_verified",
+      "upload_path": "124m-pretraining/124m-t16384-s1337-saf25/model.pt",
+      "status": "uploaded",
+      "export_sha256": "dcba3a1381e1f36ece0de820d3976d740ac0ae0270ad2ec3a26b05f83cae3c97",
+      "export_bytes": 1076354127,
+      "hf_revision": "dfcfad87c18ea6fca15ffc0ad2856668c4a34244",
+      "forward_verified": true
     },
     {
       "group": "124m-pretraining",
@@ -418,56 +460,81 @@
       "rate": 0.5,
       "run_id": "v2-5b-124m-c16384-rope-s1337-mean_r50_t50",
       "id": "124m-t16384-s1337-saf50",
-      "identity_status": "recorded",
-      "upload_path": "124m-pretraining/124m-t16384-s1337-saf50/model.pt"
+      "identity_status": "server_hash_verified",
+      "upload_path": "124m-pretraining/124m-t16384-s1337-saf50/model.pt",
+      "status": "uploaded",
+      "export_sha256": "d762a40b27a0ecf779413d3c36927dabfd445850f9723b426f58a153c85641a6",
+      "export_bytes": 1177017927,
+      "hf_revision": "a582d3d9078b964c76cb72cb3c96c42611e8156b",
+      "forward_verified": true
     },
     {
       "group": "124m-pretraining",
       "role": "main",
-      "source_sha256": null,
+      "source_sha256": "d8f6fa5d67165a47c32a2f45a4fab66958bca3564c804cc9674a21f223ac7fc1",
       "context": 16384,
       "seed": 1338,
       "rate": 0.0,
       "run_id": "v2-5c-baseline-124m-c16384-rope-s1338",
       "id": "124m-t16384-s1338-ordinary",
-      "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t16384-s1338-ordinary/model.pt"
+      "identity_status": "server_hash_verified",
+      "upload_path": "124m-pretraining/124m-t16384-s1338-ordinary/model.pt",
+      "status": "uploaded",
+      "export_sha256": "2a8703c5e0ff95cc26a7647f0000fa8881b3639d6d3259840bcd3092206d3081",
+      "export_bytes": 573035063,
+      "hf_revision": "2f553d6aba984d83202f7a308de71d23ec38ec5f",
+      "forward_verified": true
     },
     {
       "group": "124m-pretraining",
       "role": "main",
-      "source_sha256": null,
+      "source_sha256": "826b2258a93db439aac39c91e0cc3b85449e092cdb82f181d4fe3bd95f348dde",
       "context": 16384,
       "seed": 1338,
       "rate": 0.25,
       "run_id": "v2-5e-124m-c16384-rope-s1338-mean_r25_t50",
       "id": "124m-t16384-s1338-saf25",
-      "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t16384-s1338-saf25/model.pt"
+      "identity_status": "server_hash_verified",
+      "upload_path": "124m-pretraining/124m-t16384-s1338-saf25/model.pt",
+      "status": "uploaded",
+      "export_sha256": "a62b73e4c8102dc34e1e4749a0b25ec4f82bfd29962ad9941c26f2669c96741d",
+      "export_bytes": 1126686027,
+      "hf_revision": "815f231415d98d8f4b47d3822d014fd2ac495fd3",
+      "forward_verified": true
     },
     {
       "group": "124m-pretraining",
       "role": "main",
-      "source_sha256": null,
+      "source_sha256": "bc37cfb5468fd86b5d3d4f64f548bcf5923302ced1b10e877b2b00b373c9fa8a",
       "context": 16384,
       "seed": 1338,
       "rate": 0.5,
       "run_id": "v2-5e-124m-c16384-rope-s1338-mean_r50_t50",
       "id": "124m-t16384-s1338-saf50",
-      "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t16384-s1338-saf50/model.pt"
+      "identity_status": "server_hash_verified",
+      "upload_path": "124m-pretraining/124m-t16384-s1338-saf50/model.pt",
+      "status": "uploaded",
+      "export_sha256": "5762fd8466e2ec5c903d3b98cc5598b680361385268376d1b9872a9073e33810",
+      "export_bytes": 1177017927,
+      "hf_revision": "680c0b9d8e0db961e68cbce966da83be1fc0b864",
+      "forward_verified": true
     },
     {
       "group": "124m-pretraining",
       "role": "main",
-      "source_sha256": null,
+      "source_sha256": "66b5301967a548c6f7706bec764e790c9c6e5a06efd27118d6c82609fd3ea28c",
       "context": 16384,
       "seed": 1339,
       "rate": 0.0,
       "run_id": "v2-5c-baseline-124m-c16384-rope-s1339",
       "id": "124m-t16384-s1339-ordinary",
-      "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t16384-s1339-ordinary/model.pt"
+      "identity_status": "server_hash_verified",
+      "upload_path": "124m-pretraining/124m-t16384-s1339-ordinary/model.pt",
+      "status": "uploaded",
+      "export_sha256": "612ceb0c33a1a78609343fee9433c58e46c6dd97012add597af85e89a77c263c",
+      "export_bytes": 573035063,
+      "hf_revision": "81ada47aba1f51478304dc9e8fa04bfcaf803f99",
+      "forward_verified": true
     },
     {
       "group": "124m-pretraining",
@@ -479,7 +546,8 @@
       "run_id": "v2-5e-124m-c16384-rope-s1339-mean_r25_t50",
       "id": "124m-t16384-s1339-saf25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t16384-s1339-saf25/model.pt"
+      "upload_path": "124m-pretraining/124m-t16384-s1339-saf25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -491,7 +559,8 @@
       "run_id": "v2-5e-124m-c16384-rope-s1339-mean_r50_t50",
       "id": "124m-t16384-s1339-saf50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t16384-s1339-saf50/model.pt"
+      "upload_path": "124m-pretraining/124m-t16384-s1339-saf50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -503,7 +572,8 @@
       "run_id": "v2-2-124m-c4096-rope-s1338-mean_r25_t50",
       "id": "124m-t4096-s1338-saf25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1338-saf25/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1338-saf25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -515,7 +585,8 @@
       "run_id": "v2-2-124m-c4096-rope-s1338-mean_r50_t50",
       "id": "124m-t4096-s1338-saf50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1338-saf50/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1338-saf50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -527,7 +598,8 @@
       "run_id": "v2-2-124m-c4096-rope-s1339-mean_r25_t50",
       "id": "124m-t4096-s1339-saf25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1339-saf25/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1339-saf25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -539,7 +611,8 @@
       "run_id": "v2-2-124m-c4096-rope-s1339-mean_r50_t50",
       "id": "124m-t4096-s1339-saf50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t4096-s1339-saf50/model.pt"
+      "upload_path": "124m-pretraining/124m-t4096-s1339-saf50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -551,7 +624,8 @@
       "run_id": "v2-4a-baseline-124m-c8192-rope-s1337",
       "id": "124m-t8192-s1337-ordinary",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1337-ordinary/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -563,7 +637,8 @@
       "run_id": "v2-4b-124m-c8192-rope-s1337-mean_r25_t50",
       "id": "124m-t8192-s1337-saf25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1337-saf25/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1337-saf25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -575,7 +650,8 @@
       "run_id": "v2-4b-124m-c8192-rope-s1337-mean_r50_t50",
       "id": "124m-t8192-s1337-saf50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1337-saf50/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1337-saf50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -587,7 +663,8 @@
       "run_id": "v2-5c-baseline-124m-c8192-rope-s1338",
       "id": "124m-t8192-s1338-ordinary",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1338-ordinary/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1338-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -599,7 +676,8 @@
       "run_id": "v2-5d-124m-c8192-rope-s1338-mean_r25_t50",
       "id": "124m-t8192-s1338-saf25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1338-saf25/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1338-saf25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -611,7 +689,8 @@
       "run_id": "v2-5d-124m-c8192-rope-s1338-mean_r50_t50",
       "id": "124m-t8192-s1338-saf50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1338-saf50/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1338-saf50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -623,7 +702,8 @@
       "run_id": "v2-5c-baseline-124m-c8192-rope-s1339",
       "id": "124m-t8192-s1339-ordinary",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1339-ordinary/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1339-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -635,7 +715,8 @@
       "run_id": "v2-5d-124m-c8192-rope-s1339-mean_r25_t50",
       "id": "124m-t8192-s1339-saf25",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1339-saf25/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1339-saf25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "124m-pretraining",
@@ -647,7 +728,8 @@
       "run_id": "v2-5d-124m-c8192-rope-s1339-mean_r50_t50",
       "id": "124m-t8192-s1339-saf50",
       "identity_status": "needs_server_hash",
-      "upload_path": "124m-pretraining/124m-t8192-s1339-saf50/model.pt"
+      "upload_path": "124m-pretraining/124m-t8192-s1339-saf50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -659,7 +741,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1337-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1337-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1337-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -671,7 +754,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1337-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1337-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -683,7 +767,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1338-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1338-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1338-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -695,7 +780,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1338-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1338-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1338-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -707,7 +793,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1339-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1339-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1339-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -719,7 +806,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1339-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1339-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1339-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -731,7 +819,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1337-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1337-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1337-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -743,7 +832,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1337-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1337-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -755,7 +845,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1338-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1338-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1338-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -767,7 +858,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1338-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1338-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1338-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -779,7 +871,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1339-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1339-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1339-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -791,7 +884,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1339-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1339-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1339-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -803,7 +897,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1337-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1337-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1337-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -815,7 +910,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1337-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1337-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -827,7 +923,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1337-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1337-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1337-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -839,7 +936,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1338-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1338-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1338-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -851,7 +949,8 @@
       "max_length": 128,
       "id": "1b-sst2-s1339-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-sst2-s1339-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-sst2-s1339-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -863,7 +962,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1337-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1337-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1337-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -875,7 +975,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1338-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1338-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1338-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -887,7 +988,8 @@
       "max_length": 512,
       "id": "1b-boolq-s1339-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-boolq-s1339-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-boolq-s1339-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -899,7 +1001,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1337-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1337-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1337-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -911,7 +1014,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1338-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1338-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1338-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -923,7 +1027,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1338-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1338-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1338-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -935,7 +1040,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1338-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1338-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1338-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -947,7 +1053,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1339-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1339-mean25/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1339-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -959,7 +1066,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1339-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1339-mean50/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1339-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-finetuning",
@@ -971,7 +1079,8 @@
       "max_length": 8192,
       "id": "1b-quality-s1339-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-finetuning/1b-quality-s1339-ordinary/model.pt"
+      "upload_path": "1b-finetuning/1b-quality-s1339-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-pretraining",
@@ -982,7 +1091,8 @@
       "context": 8192,
       "id": "1b-t8192-s1337-mean25",
       "identity_status": "recorded",
-      "upload_path": "1b-pretraining/1b-t8192-s1337-mean25/model.pt"
+      "upload_path": "1b-pretraining/1b-t8192-s1337-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-pretraining",
@@ -993,7 +1103,8 @@
       "context": 8192,
       "id": "1b-t8192-s1337-mean50",
       "identity_status": "recorded",
-      "upload_path": "1b-pretraining/1b-t8192-s1337-mean50/model.pt"
+      "upload_path": "1b-pretraining/1b-t8192-s1337-mean50/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "1b-pretraining",
@@ -1004,7 +1115,8 @@
       "context": 8192,
       "id": "1b-t8192-s1337-ordinary",
       "identity_status": "recorded",
-      "upload_path": "1b-pretraining/1b-t8192-s1337-ordinary/model.pt"
+      "upload_path": "1b-pretraining/1b-t8192-s1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1015,7 +1127,8 @@
       "budget": "clock",
       "id": "budget-s1337-mean25_clock-87e3",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-mean25_clock-87e3/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-mean25_clock-87e3/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1026,7 +1139,8 @@
       "budget": "clock",
       "id": "budget-s1337-mean50_clock-4417",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-mean50_clock-4417/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-mean50_clock-4417/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1037,7 +1151,8 @@
       "budget": "clock",
       "id": "budget-s1337-ordinary0_clock-2f2e",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-ordinary0_clock-2f2e/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-ordinary0_clock-2f2e/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1048,7 +1163,8 @@
       "budget": "clock",
       "id": "budget-s1337-prune25_clock-ad04",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-prune25_clock-ad04/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-prune25_clock-ad04/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1059,7 +1175,8 @@
       "budget": "clock",
       "id": "budget-s1337-prune50_clock-88c1",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-prune50_clock-88c1/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-prune50_clock-88c1/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1070,7 +1187,8 @@
       "budget": "clock",
       "id": "budget-s1338-mean25_clock-5bf5",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-mean25_clock-5bf5/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-mean25_clock-5bf5/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1081,7 +1199,8 @@
       "budget": "clock",
       "id": "budget-s1338-mean50_clock-e2de",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-mean50_clock-e2de/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-mean50_clock-e2de/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1092,7 +1211,8 @@
       "budget": "clock",
       "id": "budget-s1338-ordinary0_clock-1b10",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-ordinary0_clock-1b10/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-ordinary0_clock-1b10/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1103,7 +1223,8 @@
       "budget": "clock",
       "id": "budget-s1338-prune25_clock-498f",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-prune25_clock-498f/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-prune25_clock-498f/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1114,7 +1235,8 @@
       "budget": "clock",
       "id": "budget-s1338-prune50_clock-74b8",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-prune50_clock-74b8/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-prune50_clock-74b8/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1125,7 +1247,8 @@
       "budget": "clock",
       "id": "budget-s1339-mean25_clock-c1ee",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-mean25_clock-c1ee/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-mean25_clock-c1ee/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1136,7 +1259,8 @@
       "budget": "clock",
       "id": "budget-s1339-mean50_clock-b548",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-mean50_clock-b548/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-mean50_clock-b548/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1147,7 +1271,8 @@
       "budget": "clock",
       "id": "budget-s1339-ordinary0_clock-9912",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-ordinary0_clock-9912/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-ordinary0_clock-9912/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1158,7 +1283,8 @@
       "budget": "clock",
       "id": "budget-s1339-prune25_clock-2954",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-prune25_clock-2954/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-prune25_clock-2954/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1169,7 +1295,8 @@
       "budget": "clock",
       "id": "budget-s1339-prune50_clock-f871",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-prune50_clock-f871/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-prune50_clock-f871/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1180,7 +1307,8 @@
       "budget": "tokens",
       "id": "budget-s1337-ordinary_tokens-27d8",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-ordinary_tokens-27d8/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-ordinary_tokens-27d8/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1191,7 +1319,8 @@
       "budget": "tokens",
       "id": "budget-s1338-ordinary_tokens-7265",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-ordinary_tokens-7265/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-ordinary_tokens-7265/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1202,7 +1331,8 @@
       "budget": "tokens",
       "id": "budget-s1339-ordinary_tokens-2784",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-ordinary_tokens-2784/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-ordinary_tokens-2784/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1213,7 +1343,8 @@
       "budget": "tokens",
       "id": "budget-s1337-mean25_early_tokens-a636",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-mean25_early_tokens-a636/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-mean25_early_tokens-a636/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1224,7 +1355,8 @@
       "budget": "tokens",
       "id": "budget-s1337-mean25_tokens-676c",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-mean25_tokens-676c/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-mean25_tokens-676c/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1235,7 +1367,8 @@
       "budget": "tokens",
       "id": "budget-s1337-mean50_tokens-0d1b",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-mean50_tokens-0d1b/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-mean50_tokens-0d1b/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1246,7 +1379,8 @@
       "budget": "tokens",
       "id": "budget-s1337-ordinary_tokens-3528",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-ordinary_tokens-3528/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-ordinary_tokens-3528/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1257,7 +1391,8 @@
       "budget": "tokens",
       "id": "budget-s1337-prune25_tokens-326f",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-prune25_tokens-326f/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-prune25_tokens-326f/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1268,7 +1403,8 @@
       "budget": "tokens",
       "id": "budget-s1337-prune50_tokens-4874",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-prune50_tokens-4874/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-prune50_tokens-4874/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1279,7 +1415,8 @@
       "budget": "tokens",
       "id": "budget-s1337-random_mean25_tokens-9b64",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-random_mean25_tokens-9b64/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-random_mean25_tokens-9b64/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1290,7 +1427,8 @@
       "budget": "tokens",
       "id": "budget-s1337-random_mean50_tokens-068e",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-random_mean50_tokens-068e/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-random_mean50_tokens-068e/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1301,7 +1439,8 @@
       "budget": "tokens",
       "id": "budget-s1338-mean25_early_tokens-25e1",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-mean25_early_tokens-25e1/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-mean25_early_tokens-25e1/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1312,7 +1451,8 @@
       "budget": "tokens",
       "id": "budget-s1338-mean25_tokens-b62a",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-mean25_tokens-b62a/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-mean25_tokens-b62a/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1323,7 +1463,8 @@
       "budget": "tokens",
       "id": "budget-s1338-mean50_tokens-2462",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-mean50_tokens-2462/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-mean50_tokens-2462/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1334,7 +1475,8 @@
       "budget": "tokens",
       "id": "budget-s1338-ordinary_tokens-5b28",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-ordinary_tokens-5b28/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-ordinary_tokens-5b28/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1345,7 +1487,8 @@
       "budget": "tokens",
       "id": "budget-s1338-prune25_tokens-a9f7",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-prune25_tokens-a9f7/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-prune25_tokens-a9f7/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1356,7 +1499,8 @@
       "budget": "tokens",
       "id": "budget-s1338-prune50_tokens-ce6d",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-prune50_tokens-ce6d/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-prune50_tokens-ce6d/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1367,7 +1511,8 @@
       "budget": "tokens",
       "id": "budget-s1338-random_mean25_tokens-7f23",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-random_mean25_tokens-7f23/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-random_mean25_tokens-7f23/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1378,7 +1523,8 @@
       "budget": "tokens",
       "id": "budget-s1338-random_mean50_tokens-e40b",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-random_mean50_tokens-e40b/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-random_mean50_tokens-e40b/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1389,7 +1535,8 @@
       "budget": "tokens",
       "id": "budget-s1339-mean25_early_tokens-c46a",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-mean25_early_tokens-c46a/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-mean25_early_tokens-c46a/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1400,7 +1547,8 @@
       "budget": "tokens",
       "id": "budget-s1339-mean25_tokens-b8e0",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-mean25_tokens-b8e0/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-mean25_tokens-b8e0/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1411,7 +1559,8 @@
       "budget": "tokens",
       "id": "budget-s1339-mean50_tokens-f971",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-mean50_tokens-f971/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-mean50_tokens-f971/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1422,7 +1571,8 @@
       "budget": "tokens",
       "id": "budget-s1339-ordinary_tokens-5fd1",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-ordinary_tokens-5fd1/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-ordinary_tokens-5fd1/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1433,7 +1583,8 @@
       "budget": "tokens",
       "id": "budget-s1339-prune25_tokens-dbeb",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-prune25_tokens-dbeb/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-prune25_tokens-dbeb/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1444,7 +1595,8 @@
       "budget": "tokens",
       "id": "budget-s1339-prune50_tokens-0287",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-prune50_tokens-0287/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-prune50_tokens-0287/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1455,7 +1607,8 @@
       "budget": "tokens",
       "id": "budget-s1339-random_mean25_tokens-c01d",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-random_mean25_tokens-c01d/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-random_mean25_tokens-c01d/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1466,7 +1619,8 @@
       "budget": "tokens",
       "id": "budget-s1339-random_mean50_tokens-b270",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-random_mean50_tokens-b270/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-random_mean50_tokens-b270/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1477,7 +1631,8 @@
       "budget": "clock",
       "id": "budget-s1337-random_mean25_clock-895b",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-random_mean25_clock-895b/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-random_mean25_clock-895b/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1488,7 +1643,8 @@
       "budget": "clock",
       "id": "budget-s1337-random_mean50_clock-5cfe",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1337-random_mean50_clock-5cfe/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1337-random_mean50_clock-5cfe/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1499,7 +1655,8 @@
       "budget": "clock",
       "id": "budget-s1338-random_mean25_clock-39c7",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-random_mean25_clock-39c7/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-random_mean25_clock-39c7/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1510,7 +1667,8 @@
       "budget": "clock",
       "id": "budget-s1338-random_mean50_clock-0df7",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1338-random_mean50_clock-0df7/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1338-random_mean50_clock-0df7/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1521,7 +1679,8 @@
       "budget": "clock",
       "id": "budget-s1339-random_mean25_clock-bfe7",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-random_mean25_clock-bfe7/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-random_mean25_clock-bfe7/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "matched-budget-controls",
@@ -1532,7 +1691,8 @@
       "budget": "clock",
       "id": "budget-s1339-random_mean50_clock-658c",
       "identity_status": "recorded",
-      "upload_path": "matched-budget-controls/budget-s1339-random_mean50_clock-658c/model.pt"
+      "upload_path": "matched-budget-controls/budget-s1339-random_mean50_clock-658c/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1543,7 +1703,8 @@
       "variant": "mean25",
       "id": "mqar-pre1337-task1337-mean25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1337-task1337-mean25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1337-task1337-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1554,7 +1715,8 @@
       "variant": "ordinary",
       "id": "mqar-pre1337-task1337-ordinary",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1337-task1337-ordinary/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1337-task1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1565,7 +1727,8 @@
       "variant": "prune_gate_taylor25",
       "id": "mqar-pre1337-task1337-prune_gate_taylor25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1337-task1337-prune_gate_taylor25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1337-task1337-prune_gate_taylor25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1576,7 +1739,8 @@
       "variant": "prune_variance25",
       "id": "mqar-pre1337-task1337-prune_variance25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1337-task1337-prune_variance25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1337-task1337-prune_variance25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1587,7 +1751,8 @@
       "variant": "mean25",
       "id": "mqar-pre1338-task1337-mean25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1338-task1337-mean25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1338-task1337-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1598,7 +1763,8 @@
       "variant": "ordinary",
       "id": "mqar-pre1338-task1337-ordinary",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1338-task1337-ordinary/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1338-task1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1609,7 +1775,8 @@
       "variant": "prune_gate_taylor25",
       "id": "mqar-pre1338-task1337-prune_gate_taylor25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1338-task1337-prune_gate_taylor25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1338-task1337-prune_gate_taylor25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1620,7 +1787,8 @@
       "variant": "prune_variance25",
       "id": "mqar-pre1338-task1337-prune_variance25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1338-task1337-prune_variance25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1338-task1337-prune_variance25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1631,7 +1799,8 @@
       "variant": "mean25",
       "id": "mqar-pre1339-task1337-mean25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1339-task1337-mean25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1339-task1337-mean25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1642,7 +1811,8 @@
       "variant": "ordinary",
       "id": "mqar-pre1339-task1337-ordinary",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1339-task1337-ordinary/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1339-task1337-ordinary/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1653,7 +1823,8 @@
       "variant": "prune_gate_taylor25",
       "id": "mqar-pre1339-task1337-prune_gate_taylor25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1339-task1337-prune_gate_taylor25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1339-task1337-prune_gate_taylor25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "mqar-pair-sweep",
@@ -1664,7 +1835,8 @@
       "variant": "prune_variance25",
       "id": "mqar-pre1339-task1337-prune_variance25",
       "identity_status": "recorded",
-      "upload_path": "mqar-pair-sweep/mqar-pre1339-task1337-prune_variance25/model.pt"
+      "upload_path": "mqar-pair-sweep/mqar-pre1339-task1337-prune_variance25/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1673,7 +1845,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-f70fa8a8d8",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-f70fa8a8d8/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-f70fa8a8d8/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1682,7 +1855,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-d1536a8007",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-d1536a8007/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-d1536a8007/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1691,7 +1865,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-9f893065bb",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-9f893065bb/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-9f893065bb/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1700,7 +1875,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-aea0919e5d",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-aea0919e5d/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-aea0919e5d/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1709,7 +1885,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-85c032bfe3",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-85c032bfe3/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-85c032bfe3/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1718,7 +1895,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-ba283dba8d",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-ba283dba8d/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-ba283dba8d/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1727,7 +1905,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-52f8453589",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-52f8453589/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-52f8453589/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1736,7 +1915,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-5b83252d2c",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-5b83252d2c/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-5b83252d2c/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1745,7 +1925,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-a934e54484",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-a934e54484/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-a934e54484/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1754,7 +1935,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-e287e7ff44",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-e287e7ff44/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-e287e7ff44/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1763,7 +1945,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-40aa1e6bc4",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-40aa1e6bc4/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-40aa1e6bc4/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1772,7 +1955,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-99d62516a2",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-99d62516a2/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-99d62516a2/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1781,7 +1965,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-3675608772",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-3675608772/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-3675608772/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1790,7 +1975,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-690e74f78f",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-690e74f78f/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-690e74f78f/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1799,7 +1985,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-930629cb6e",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-930629cb6e/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-930629cb6e/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1808,7 +1995,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-c0f10b6d05",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-c0f10b6d05/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-c0f10b6d05/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1817,7 +2005,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-ea8f467a0a",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-ea8f467a0a/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-ea8f467a0a/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1826,7 +2015,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-e968be2dd1",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-e968be2dd1/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-e968be2dd1/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1835,7 +2025,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-c568f68034",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-c568f68034/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-c568f68034/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1844,7 +2035,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-ea05752493",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-ea05752493/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-ea05752493/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1853,7 +2045,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-8bc96c940b",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-8bc96c940b/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-8bc96c940b/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1862,7 +2055,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-0f7536cf20",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-0f7536cf20/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-0f7536cf20/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1871,7 +2065,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-b43d2ce123",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-b43d2ce123/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-b43d2ce123/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1880,7 +2075,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-7a80b87860",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-7a80b87860/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-7a80b87860/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1889,7 +2085,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-7cd14eb0ff",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-7cd14eb0ff/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-7cd14eb0ff/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1898,7 +2095,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-0c199b2d7b",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-0c199b2d7b/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-0c199b2d7b/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1907,7 +2105,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-a4ff3aaa34",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-a4ff3aaa34/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-a4ff3aaa34/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1916,7 +2115,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-6c1527c1f5",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-6c1527c1f5/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-6c1527c1f5/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1925,7 +2125,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-632aa6b050",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-632aa6b050/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-632aa6b050/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1934,7 +2135,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-b9aa2d95c2",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-b9aa2d95c2/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-b9aa2d95c2/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1943,7 +2145,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-130546164c",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-130546164c/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-130546164c/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1952,7 +2155,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-ea60b50ea4",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-ea60b50ea4/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-ea60b50ea4/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1961,7 +2165,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-b43b5f4983",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-b43b5f4983/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-b43b5f4983/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1970,7 +2175,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-0363ecc164",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-0363ecc164/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-0363ecc164/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1979,7 +2185,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-6638c58d8d",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-6638c58d8d/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-6638c58d8d/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1988,7 +2195,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-e5910701e0",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-e5910701e0/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-e5910701e0/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -1997,7 +2205,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-4a862497fa",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-4a862497fa/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-4a862497fa/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2006,7 +2215,8 @@
       "recorded_bytes": 769262219,
       "id": "supplementary-controls-e1572158a2",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-e1572158a2/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-e1572158a2/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2015,7 +2225,8 @@
       "recorded_bytes": 668596235,
       "id": "supplementary-controls-bc8a4a285c",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-bc8a4a285c/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-bc8a4a285c/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2024,7 +2235,8 @@
       "recorded_bytes": 634370827,
       "id": "supplementary-controls-2a94038f8f",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-2a94038f8f/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-2a94038f8f/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2033,7 +2245,8 @@
       "recorded_bytes": 635553611,
       "id": "supplementary-controls-a2425a517e",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-a2425a517e/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-a2425a517e/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2042,7 +2255,8 @@
       "recorded_bytes": 769262219,
       "id": "supplementary-controls-ea108d5c6a",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-ea108d5c6a/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-ea108d5c6a/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2051,7 +2265,8 @@
       "recorded_bytes": 668596235,
       "id": "supplementary-controls-bf2215146a",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-bf2215146a/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-bf2215146a/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2060,7 +2275,8 @@
       "recorded_bytes": 634370827,
       "id": "supplementary-controls-ebcb6f48db",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-ebcb6f48db/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-ebcb6f48db/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2069,7 +2285,8 @@
       "recorded_bytes": 635553611,
       "id": "supplementary-controls-bf3eb64e4b",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-bf3eb64e4b/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-bf3eb64e4b/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2078,7 +2295,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-1b4a0d0c35",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-1b4a0d0c35/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-1b4a0d0c35/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2087,7 +2305,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-5563f38062",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-5563f38062/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-5563f38062/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2096,7 +2315,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-73254f848e",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-73254f848e/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-73254f848e/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2105,7 +2325,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-07d67e08de",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-07d67e08de/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-07d67e08de/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2114,7 +2335,8 @@
       "recorded_bytes": null,
       "id": "supplementary-controls-da9df93c47",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-da9df93c47/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-da9df93c47/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2123,7 +2345,8 @@
       "recorded_bytes": 639906571,
       "id": "supplementary-controls-e68772a3b9",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-e68772a3b9/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-e68772a3b9/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2132,7 +2355,8 @@
       "recorded_bytes": 514073931,
       "id": "supplementary-controls-0414607a02",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-0414607a02/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-0414607a02/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2141,7 +2365,8 @@
       "recorded_bytes": 639906571,
       "id": "supplementary-controls-5ca4f54330",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-5ca4f54330/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-5ca4f54330/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2150,7 +2375,8 @@
       "recorded_bytes": 494003019,
       "id": "supplementary-controls-4cb87ff762",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-4cb87ff762/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-4cb87ff762/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2159,7 +2385,8 @@
       "recorded_bytes": 639906571,
       "id": "supplementary-controls-82ea5a6355",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-82ea5a6355/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-82ea5a6355/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2168,7 +2395,8 @@
       "recorded_bytes": 514073931,
       "id": "supplementary-controls-c9685f74e5",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-c9685f74e5/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-c9685f74e5/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2177,7 +2405,8 @@
       "recorded_bytes": 639906571,
       "id": "supplementary-controls-1caaf51ccb",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-1caaf51ccb/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-1caaf51ccb/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2186,7 +2415,8 @@
       "recorded_bytes": 494003019,
       "id": "supplementary-controls-cae1fa1de2",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-cae1fa1de2/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-cae1fa1de2/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2195,7 +2425,8 @@
       "recorded_bytes": 639906571,
       "id": "supplementary-controls-f3483c6869",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-f3483c6869/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-f3483c6869/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2204,7 +2435,8 @@
       "recorded_bytes": 514073931,
       "id": "supplementary-controls-5325cc1060",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-5325cc1060/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-5325cc1060/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2213,7 +2445,8 @@
       "recorded_bytes": 639906571,
       "id": "supplementary-controls-c389544257",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-c389544257/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-c389544257/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2222,7 +2455,8 @@
       "recorded_bytes": 494003019,
       "id": "supplementary-controls-9303870a67",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-9303870a67/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-9303870a67/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2231,7 +2465,8 @@
       "recorded_bytes": 1628699316,
       "id": "supplementary-controls-568c1ca1ed",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-568c1ca1ed/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-568c1ca1ed/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2240,7 +2475,8 @@
       "recorded_bytes": 1636581112,
       "id": "supplementary-controls-47a279f3ea",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-47a279f3ea/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-47a279f3ea/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2249,7 +2485,8 @@
       "recorded_bytes": 1628699316,
       "id": "supplementary-controls-ce67b24d4f",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-ce67b24d4f/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-ce67b24d4f/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2258,7 +2495,8 @@
       "recorded_bytes": 1636581112,
       "id": "supplementary-controls-49c90c88b6",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-49c90c88b6/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-49c90c88b6/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2267,7 +2505,8 @@
       "recorded_bytes": 1628699316,
       "id": "supplementary-controls-3deed1eaff",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-3deed1eaff/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-3deed1eaff/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2276,7 +2515,8 @@
       "recorded_bytes": 1636581112,
       "id": "supplementary-controls-74095fc6c9",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-74095fc6c9/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-74095fc6c9/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2285,7 +2525,8 @@
       "recorded_bytes": 1454482992,
       "id": "supplementary-controls-2e59b75b58",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-2e59b75b58/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-2e59b75b58/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2294,7 +2535,8 @@
       "recorded_bytes": 1454482928,
       "id": "supplementary-controls-1d1d9a7f9a",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-1d1d9a7f9a/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-1d1d9a7f9a/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2303,7 +2545,8 @@
       "recorded_bytes": 1454482992,
       "id": "supplementary-controls-f260ea77c6",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-f260ea77c6/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-f260ea77c6/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2312,7 +2555,8 @@
       "recorded_bytes": 10944772224,
       "id": "supplementary-controls-53fbe38bf3",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-53fbe38bf3/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-53fbe38bf3/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2321,7 +2565,8 @@
       "recorded_bytes": 3991268683,
       "id": "supplementary-controls-7ec08e8676",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-7ec08e8676/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-7ec08e8676/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2330,7 +2575,8 @@
       "recorded_bytes": 3991268491,
       "id": "supplementary-controls-2312ed0a4a",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-2312ed0a4a/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-2312ed0a4a/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2339,7 +2585,8 @@
       "recorded_bytes": 3991268683,
       "id": "supplementary-controls-639f3f88f2",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-639f3f88f2/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-639f3f88f2/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2348,7 +2595,8 @@
       "recorded_bytes": 3991241483,
       "id": "supplementary-controls-6ea9c13142",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-6ea9c13142/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-6ea9c13142/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2357,7 +2605,8 @@
       "recorded_bytes": 3991241483,
       "id": "supplementary-controls-8fd263f828",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-8fd263f828/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-8fd263f828/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2366,7 +2615,8 @@
       "recorded_bytes": 3991241483,
       "id": "supplementary-controls-672a8a0170",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-672a8a0170/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-672a8a0170/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2375,7 +2625,8 @@
       "recorded_bytes": 3990959307,
       "id": "supplementary-controls-7a3f7f4b11",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-7a3f7f4b11/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-7a3f7f4b11/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2384,7 +2635,8 @@
       "recorded_bytes": 3990958859,
       "id": "supplementary-controls-73285db4c4",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-73285db4c4/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-73285db4c4/model.pt",
+      "status": "not_uploaded"
     },
     {
       "group": "supplementary-controls",
@@ -2393,7 +2645,10 @@
       "recorded_bytes": 3990958859,
       "id": "supplementary-controls-4bd3f00049",
       "identity_status": "recorded",
-      "upload_path": "supplementary-controls/supplementary-controls-4bd3f00049/model.pt"
+      "upload_path": "supplementary-controls/supplementary-controls-4bd3f00049/model.pt",
+      "status": "not_uploaded"
     }
-  ]
+  ],
+  "repo_id": "waylonli/Selective-Attention-Freezing",
+  "uploaded_models": 7
 }

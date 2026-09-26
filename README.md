@@ -22,10 +22,27 @@ Run commands from the repository root unless stated otherwise.
 Use `--help` on each entry point for its full options.
 Corpora, weights and generated results are not included.
 
+## Released Assets
+
+[Checkpoints](https://huggingface.co/waylonli/Selective-Attention-Freezing) and [evaluation data and splits](https://huggingface.co/datasets/waylonli/Selective-Attention-Freezing-data) are hosted on Hugging Face.
+The data release contains the original 124M and 1B validation-token files, nine downstream task/seed partitions, and six MQAR pair-sweep datasets.
+Checkpoint uploads are ongoing; the [live catalogue](https://huggingface.co/waylonli/Selective-Attention-Freezing/blob/main/checkpoints.json) marks available entries as `uploaded`.
+The download commands use immutable revisions and verify SHA256 checksums:
+
+```bash
+python -m scripts.download --data --out data/release
+python -m scripts.download --checkpoint 124m-t16384-s1337-saf25 --out checkpoints
+```
+
+The checkpoint command prints the downloaded `model.pt` path.
+Choose other IDs from the catalogue for ordinary attention, 1B, task-finetuned models and controls.
+Each model directory includes its configuration, export checksums and validation metadata.
+Exports preserve tensor precision, fixed patterns and pruning layouts, but omit optimiser state.
+
 ## Data and Training
 
 Native models use the GPT-2 tokeniser through `tiktoken` and `uint16` token files.
-The 124M preparation script is `data/fineweb_edu/prepare.py`; its archived corpus revision remains to be confirmed for exact reproduction.
+The 124M preparation script is `data/fineweb_edu/prepare.py`; its archived training-corpus revision remains to be confirmed, so use the released original validation file for exact evaluation.
 The 1B data are revision-pinned, with expected token-file hashes in `configs/data_1b.json`:
 
 ```bash
@@ -66,7 +83,8 @@ Use native nanoGPT checkpoints, not Transformers `AutoModel` files:
 
 ```bash
 python nanogpt/eval_nanogpt_logprobs.py \
-  --ckpt checkpoints/model.pt --data_dir data/fineweb_edu \
+  --ckpt checkpoints/124m-pretraining/124m-t16384-s1337-saf25/model.pt \
+  --data_dir data/release/pretraining/fineweb_edu \
   --start_fraction 0.5 --end_fraction 1.0 --batch_size 1 \
   --out outputs/logprobs.pt
 
@@ -125,7 +143,7 @@ The downstream protocol uses 512 calibration sequences, not the separate 128-seq
 
 ## Weights and Tests
 
-Weights are not yet uploaded; `checkpoints.json` records release candidates and source identities, with unresolved hashes marked explicitly.
+`checkpoints.json` is a local snapshot of the release catalogue; the downloader uses the current Hugging Face catalogue.
 Export a trusted training checkpoint without changing tensor precision or dropping fixed-pattern buffers and pruning layouts:
 
 ```bash
@@ -138,7 +156,8 @@ python kernel/test_fused_attn.py
 ```
 
 The distributed test needs local loopback access (`GLOO_SOCKET_IFNAME=lo0` on macOS if required); kernel tests need CUDA.
-The packaged GPU paths and real checkpoint exports still require validation before publication.
+Published checkpoints pass strict loading and bitwise original/exported BF16-logit checks on CUDA; their `metadata.json` files record the validation scope.
+Kernel correctness tests are separate from export checks.
 
 ## Acknowledgements
 
