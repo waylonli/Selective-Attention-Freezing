@@ -1,0 +1,166 @@
+{
+  "settings": {
+    "accumulation": 15,
+    "batch": 8,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "calibration_batch": 2,
+    "calibration_batches": 16,
+    "context": 4096,
+    "eval_every": 250,
+    "fit_max_kl": 0.2,
+    "fit_steps": 400,
+    "grad_clip": 1.0,
+    "min_lr": 6e-05,
+    "monitor_windows": 32,
+    "n_embd": 768,
+    "n_head": 12,
+    "n_layer": 12,
+    "peak_lr": 0.0006,
+    "pilot": false,
+    "seeds": [
+      1337,
+      1338,
+      1339
+    ],
+    "updates": 5000,
+    "vocab_size": 50304,
+    "warmup": 500,
+    "weight_decay": 0.1
+  },
+  "arms": [
+    {
+      "budget": "tokens",
+      "mode": "ordinary",
+      "name": "ordinary_tokens",
+      "parent": null,
+      "rate": 0.0
+    },
+    {
+      "budget": "tokens",
+      "mode": "mean",
+      "name": "mean25_tokens",
+      "parent": "midpoint",
+      "rate": 0.25
+    },
+    {
+      "budget": "tokens",
+      "mode": "mean",
+      "name": "mean50_tokens",
+      "parent": "midpoint",
+      "rate": 0.5
+    },
+    {
+      "budget": "tokens",
+      "mode": "uniform",
+      "name": "uniform25_tokens",
+      "parent": "midpoint",
+      "rate": 0.25
+    },
+    {
+      "budget": "tokens",
+      "mode": "uniform",
+      "name": "uniform50_tokens",
+      "parent": "midpoint",
+      "rate": 0.5
+    },
+    {
+      "budget": "tokens",
+      "mode": "prune",
+      "name": "prune25_tokens",
+      "parent": "midpoint",
+      "rate": 0.25
+    },
+    {
+      "budget": "tokens",
+      "mode": "prune",
+      "name": "prune50_tokens",
+      "parent": "midpoint",
+      "rate": 0.5
+    },
+    {
+      "budget": "tokens",
+      "mode": "random_mean",
+      "name": "random_mean25_tokens",
+      "parent": "midpoint",
+      "rate": 0.25
+    },
+    {
+      "budget": "tokens",
+      "mode": "random_mean",
+      "name": "random_mean50_tokens",
+      "parent": "midpoint",
+      "rate": 0.5
+    },
+    {
+      "budget": "tokens",
+      "mode": "mean",
+      "name": "mean25_early_tokens",
+      "parent": "quarter",
+      "rate": 0.25
+    },
+    {
+      "budget": "clock",
+      "mode": "ordinary",
+      "name": "ordinary0_clock",
+      "parent": "midpoint",
+      "rate": 0.0
+    },
+    {
+      "budget": "clock",
+      "mode": "mean",
+      "name": "mean25_clock",
+      "parent": "midpoint",
+      "rate": 0.25
+    },
+    {
+      "budget": "clock",
+      "mode": "mean",
+      "name": "mean50_clock",
+      "parent": "midpoint",
+      "rate": 0.5
+    },
+    {
+      "budget": "clock",
+      "mode": "uniform",
+      "name": "uniform25_clock",
+      "parent": "midpoint",
+      "rate": 0.25
+    },
+    {
+      "budget": "clock",
+      "mode": "uniform",
+      "name": "uniform50_clock",
+      "parent": "midpoint",
+      "rate": 0.5
+    },
+    {
+      "budget": "clock",
+      "mode": "prune",
+      "name": "prune25_clock",
+      "parent": "midpoint",
+      "rate": 0.25
+    },
+    {
+      "budget": "clock",
+      "mode": "prune",
+      "name": "prune50_clock",
+      "parent": "midpoint",
+      "rate": 0.5
+    },
+    {
+      "name": "random_mean25_clock",
+      "mode": "random_mean",
+      "rate": 0.25,
+      "budget": "clock",
+      "parent": "midpoint"
+    },
+    {
+      "name": "random_mean50_clock",
+      "mode": "random_mean",
+      "rate": 0.5,
+      "budget": "clock",
+      "parent": "midpoint"
+    }
+  ]
+}

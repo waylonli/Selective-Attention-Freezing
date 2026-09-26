@@ -1,0 +1,13 @@
+{
+  "hf_id": "HuggingFaceFW/fineweb-edu",
+  "config": "sample-100BT",
+  "resolved_revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+  "split": "train",
+  "tokenizer": "tiktoken:gpt2",
+  "partition": "Complete documents from the start of the deterministic stream are assigned to val.bin until validation_tokens is met or exceeded. Training starts at the next document and is truncated at exactly train_tokens. The two files are document-disjoint contiguous portions of the revision-pinned stream.",
+  "minimum_characters": 64,
+  "train_tokens": 20100000000,
+  "train_sha256": "60f7b20d56fdefba6656ccbf021d852715fc1403850233e7e0f4152a25524b40",
+  "validation_tokens": 10000456,
+  "validation_sha256": "9d715216f5a25cb5970bfb11821ccbd4c89b33f14f626ab25422a19f92305e00"
+}

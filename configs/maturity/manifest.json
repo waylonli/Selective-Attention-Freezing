@@ -1,0 +1,390 @@
+{
+  "settings": {
+    "context": 4096,
+    "n_layer": 12,
+    "n_head": 12,
+    "n_embd": 768,
+    "vocab_size": 50304,
+    "batch": 8,
+    "accumulation": 15,
+    "peak_lr": 0.0006,
+    "min_lr": 6e-05,
+    "recovery_min_lr": 6e-06,
+    "warmup": 500,
+    "cooldown_updates": 1000,
+    "parent_updates": [
+      5000,
+      20000,
+      40000
+    ],
+    "recovery_updates": 2500,
+    "clock_update_cap": 4000,
+    "seed": 1337,
+    "weight_decay": 0.1,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "grad_clip": 1.0,
+    "calibration_batches": 16,
+    "calibration_batch": 2,
+    "fit_steps": 400,
+    "fit_max_kl": 0.2,
+    "monitor_windows": 32,
+    "eval_every": 250,
+    "source_save_every": 5000,
+    "recovery_save_updates": [
+      250,
+      1000
+    ],
+    "test": false
+  },
+  "data": {
+    "directory": "data/fineweb_edu_maturity",
+    "tokens": 22000000000,
+    "source_boundary": 20000000000,
+    "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9"
+  },
+  "tasks": [
+    {
+      "name": "source_low",
+      "phases": [
+        "stable_low",
+        "parent_low"
+      ],
+      "needs": []
+    },
+    {
+      "name": "recover_low_ordinary",
+      "phases": [
+        "recover_low_ordinary"
+      ],
+      "needs": [
+        "parent_low"
+      ]
+    },
+    {
+      "name": "recover_low_mean",
+      "phases": [
+        "recover_low_mean"
+      ],
+      "needs": [
+        "parent_low"
+      ]
+    },
+    {
+      "name": "recover_low_prune",
+      "phases": [
+        "recover_low_prune"
+      ],
+      "needs": [
+        "parent_low"
+      ]
+    },
+    {
+      "name": "clock_low_ordinary",
+      "phases": [
+        "clock_low_ordinary"
+      ],
+      "needs": [
+        "parent_low",
+        "recover_low_ordinary"
+      ],
+      "clock": true
+    },
+    {
+      "name": "clock_low_mean",
+      "phases": [
+        "clock_low_mean"
+      ],
+      "needs": [
+        "parent_low",
+        "recover_low_ordinary"
+      ],
+      "clock": true
+    },
+    {
+      "name": "clock_low_prune",
+      "phases": [
+        "clock_low_prune"
+      ],
+      "needs": [
+        "parent_low",
+        "recover_low_ordinary"
+      ],
+      "clock": true
+    },
+    {
+      "name": "source_mid",
+      "phases": [
+        "stable_mid",
+        "parent_mid"
+      ],
+      "needs": [
+        "stable_low"
+      ]
+    },
+    {
+      "name": "recover_mid_ordinary",
+      "phases": [
+        "recover_mid_ordinary"
+      ],
+      "needs": [
+        "parent_mid"
+      ]
+    },
+    {
+      "name": "recover_mid_mean",
+      "phases": [
+        "recover_mid_mean"
+      ],
+      "needs": [
+        "parent_mid"
+      ]
+    },
+    {
+      "name": "recover_mid_prune",
+      "phases": [
+        "recover_mid_prune"
+      ],
+      "needs": [
+        "parent_mid"
+      ]
+    },
+    {
+      "name": "source_high",
+      "phases": [
+        "stable_high",
+        "parent_high"
+      ],
+      "needs": [
+        "stable_mid"
+      ]
+    },
+    {
+      "name": "recover_high_ordinary",
+      "phases": [
+        "recover_high_ordinary"
+      ],
+      "needs": [
+        "parent_high"
+      ]
+    },
+    {
+      "name": "recover_high_mean",
+      "phases": [
+        "recover_high_mean"
+      ],
+      "needs": [
+        "parent_high"
+      ]
+    },
+    {
+      "name": "recover_high_prune",
+      "phases": [
+        "recover_high_prune"
+      ],
+      "needs": [
+        "parent_high"
+      ]
+    },
+    {
+      "name": "clock_high_ordinary",
+      "phases": [
+        "clock_high_ordinary"
+      ],
+      "needs": [
+        "parent_high",
+        "recover_high_ordinary"
+      ],
+      "clock": true
+    },
+    {
+      "name": "clock_high_mean",
+      "phases": [
+        "clock_high_mean"
+      ],
+      "needs": [
+        "parent_high",
+        "recover_high_ordinary"
+      ],
+      "clock": true
+    },
+    {
+      "name": "clock_high_prune",
+      "phases": [
+        "clock_high_prune"
+      ],
+      "needs": [
+        "parent_high",
+        "recover_high_ordinary"
+      ],
+      "clock": true
+    },
+    {
+      "name": "recover_low_prune_gate_taylor",
+      "phases": [
+        "recover_low_prune_gate_taylor"
+      ],
+      "needs": [
+        "parent_low"
+      ]
+    },
+    {
+      "name": "clock_low_prune_gate_taylor",
+      "phases": [
+        "clock_low_prune_gate_taylor"
+      ],
+      "needs": [
+        "parent_low",
+        "recover_low_ordinary"
+      ]
+    }
+  ],
+  "phases": {
+    "stable_low": {
+      "phase": "stable",
+      "parent": null,
+      "mode": "ordinary",
+      "end_step": 4000
+    },
+    "parent_low": {
+      "phase": "cooldown",
+      "parent": "stable_low",
+      "mode": "ordinary",
+      "end_step": 5000
+    },
+    "recover_low_ordinary": {
+      "phase": "recovery",
+      "parent": "parent_low",
+      "mode": "ordinary",
+      "budget": "tokens"
+    },
+    "recover_low_mean": {
+      "phase": "recovery",
+      "parent": "parent_low",
+      "mode": "mean",
+      "budget": "tokens"
+    },
+    "recover_low_prune": {
+      "phase": "recovery",
+      "parent": "parent_low",
+      "mode": "prune",
+      "budget": "tokens"
+    },
+    "clock_low_ordinary": {
+      "phase": "recovery",
+      "parent": "parent_low",
+      "mode": "ordinary",
+      "budget": "clock",
+      "reference": "recover_low_ordinary"
+    },
+    "clock_low_mean": {
+      "phase": "recovery",
+      "parent": "parent_low",
+      "mode": "mean",
+      "budget": "clock",
+      "reference": "recover_low_ordinary"
+    },
+    "clock_low_prune": {
+      "phase": "recovery",
+      "parent": "parent_low",
+      "mode": "prune",
+      "budget": "clock",
+      "reference": "recover_low_ordinary"
+    },
+    "stable_mid": {
+      "phase": "stable",
+      "parent": "stable_low",
+      "mode": "ordinary",
+      "end_step": 19000
+    },
+    "parent_mid": {
+      "phase": "cooldown",
+      "parent": "stable_mid",
+      "mode": "ordinary",
+      "end_step": 20000
+    },
+    "recover_mid_ordinary": {
+      "phase": "recovery",
+      "parent": "parent_mid",
+      "mode": "ordinary",
+      "budget": "tokens"
+    },
+    "recover_mid_mean": {
+      "phase": "recovery",
+      "parent": "parent_mid",
+      "mode": "mean",
+      "budget": "tokens"
+    },
+    "recover_mid_prune": {
+      "phase": "recovery",
+      "parent": "parent_mid",
+      "mode": "prune",
+      "budget": "tokens"
+    },
+    "stable_high": {
+      "phase": "stable",
+      "parent": "stable_mid",
+      "mode": "ordinary",
+      "end_step": 39000
+    },
+    "parent_high": {
+      "phase": "cooldown",
+      "parent": "stable_high",
+      "mode": "ordinary",
+      "end_step": 40000
+    },
+    "recover_high_ordinary": {
+      "phase": "recovery",
+      "parent": "parent_high",
+      "mode": "ordinary",
+      "budget": "tokens"
+    },
+    "recover_high_mean": {
+      "phase": "recovery",
+      "parent": "parent_high",
+      "mode": "mean",
+      "budget": "tokens"
+    },
+    "recover_high_prune": {
+      "phase": "recovery",
+      "parent": "parent_high",
+      "mode": "prune",
+      "budget": "tokens"
+    },
+    "clock_high_ordinary": {
+      "phase": "recovery",
+      "parent": "parent_high",
+      "mode": "ordinary",
+      "budget": "clock",
+      "reference": "recover_high_ordinary"
+    },
+    "clock_high_mean": {
+      "phase": "recovery",
+      "parent": "parent_high",
+      "mode": "mean",
+      "budget": "clock",
+      "reference": "recover_high_ordinary"
+    },
+    "clock_high_prune": {
+      "phase": "recovery",
+      "parent": "parent_high",
+      "mode": "prune",
+      "budget": "clock",
+      "reference": "recover_high_ordinary"
+    },
+    "recover_low_prune_gate_taylor": {
+      "phase": "recovery",
+      "parent": "parent_low",
+      "mode": "prune_gate_taylor",
+      "budget": "tokens"
+    },
+    "clock_low_prune_gate_taylor": {
+      "phase": "recovery",
+      "parent": "parent_low",
+      "mode": "prune_gate_taylor",
+      "budget": "clock",
+      "reference": "recover_low_ordinary"
+    }
+  },
+  "source_hashes": {}
+}
