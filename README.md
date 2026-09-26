@@ -1,11 +1,8 @@
 # Selective Attention Freezing (SAF)
 
-Code for **When Can Attention Heads Be Statically Defined?**
+**When Can Attention Heads Be Statically Defined?**
 
 **Weixian Waylon Li**, **Yintao Tai**, **Marcio Fonseca** and **Shay B. Cohen**.
-Li, Tai and Cohen: University of Edinburgh, United Kingdom.
-Fonseca: Chamber of Deputies, Brazil.
-Contact: [waylon.li@ed.ac.uk](mailto:waylon.li@ed.ac.uk).
 
 SAF replaces selected attention heads with fixed causal patterns while retaining their input-dependent value projections and token mixing.
 The repository contains native-model training and evaluation (`nanogpt/`), fused kernels (`kernel/`), experiment configurations (`configs/`), controls (`supplement/`) and pretrained Qwen evaluation (`qwen/`).
