@@ -1,12 +1,12 @@
 # Selective Attention Freezing (SAF)
 
 SAF replaces selected attention heads with fixed causal patterns while retaining their input-dependent value projections and token mixing.
-This repository contains the training, calibration, compact fitting, fused execution and evaluation code used in the paper.
+The repository contains native-model training and evaluation (`nanogpt/`), fused kernels (`kernel/`), experiment configurations (`configs/`), controls (`supplement/`) and pretrained Qwen evaluation (`qwen/`).
 
 ## Installation
 
-Use Python 3.10 or newer and install a CUDA-enabled PyTorch build appropriate for your machine.
-The recorded GPU environment used PyTorch 2.10 and Triton 3.6; CPU tests also run with PyTorch 2.9.
+Use Python 3.10 or newer and a PyTorch build appropriate for your machine.
+The recorded GPU environment used PyTorch 2.10 and Triton 3.6; fused execution requires Linux and an NVIDIA GPU with BF16 support.
 
 ```bash
 pip install -r requirements.txt
@@ -14,31 +14,51 @@ pip install pytest
 python -m pytest
 ```
 
-Fused benchmarks require Linux, an NVIDIA GPU with BF16 support, and Triton.
-CPU execution provides reference implementations, not the reported acceleration.
+Run commands from the repository root unless stated otherwise.
+Use `--help` on each entry point for its full options.
+Corpora, weights and generated results are not included.
 
-## Layout
+## Data and Training
 
-| Directory | Contents |
+Native models use the GPT-2 tokeniser through `tiktoken` and `uint16` token files.
+The 124M preparation script is `data/fineweb_edu/prepare.py`; its archived corpus revision remains to be confirmed for exact reproduction.
+The 1B data are revision-pinned, with expected token-file hashes in `configs/data_1b.json`:
+
+```bash
+python data/prepare_fineweb_edu_scale.py \
+  --out-dir data/fineweb_edu_20b --train-tokens 20100000000 \
+  --validation-tokens 10000000 \
+  --revision 87f09149ef4734204d70ed1d046ddc9ca3f2b8f9
+
+python -m scripts.pretrain --manifest configs/pretraining/main_v1.json --list
+python -m scripts.pretrain --manifest configs/pretraining/main_v1.json \
+  --run-id p0-baseline-124m-c4096-rope-s1337 --dry-run
+```
+
+Remove `--dry-run` to train; use `--out` for a new output directory and `--parent` for a continuation checkpoint containing Adam, sampler and RNG state.
+Evaluation-only exports cannot resume the original training trajectory.
+
+| Experiment | Configuration in `configs/pretraining/` |
 | --- | --- |
-| `nanogpt/` | Model, training, head selection, fitting, task finetuning and paired benchmarks |
-| `kernel/` | Fused mixed-head attention and indexed projections |
-| `scripts/` | Portable training launcher, checkpoint export, task evaluation and MQAR |
-| `configs/` | Scientific configurations, without scheduler or account settings |
-| `supplement/` | Matched-budget controls, pruning and trainable-pattern comparison |
-| `qwen/` | Pretrained Qwen GQA extraction and zero-shot evaluation |
-| `zoology/` | Vendored MQAR generator and upstream licence |
+| Initial trajectories, rates and times | `main_v1.json` |
+| Representation and pattern content | `main_v2_phase1a.json`, `main_v2_phase1b*.json` |
+| Head selection and schedules | `main_v2_phase1c.json`, `main_v2_phase1d*.json`, `kl_selector_continuation_v1.json` |
+| Three-seed 4K recipe | `main_v2_phase2_replication.json` plus seed 1337 in `main_v1.json` |
+| Native 8K and 16K | `main_v2_phase4*.json`, `main_v2_phase5*.json` |
+| 1B | `scaleup_1b_midpoint_v1.json`, `scaleup_1b_continuations_v1.json`, `scaleup_1b_frozen_retry_v2.json` |
 
-[REPRODUCING.md](REPRODUCING.md) gives commands and identifies the relevant configurations.
-[CHECKPOINTS.md](CHECKPOINTS.md) describes evaluation weights and the Hugging Face release inventory.
-[THIRD_PARTY.md](THIRD_PARTY.md) records upstream code and dataset sources.
+Use `frozen_retry_v2` for the final 1B SAF models and `continuations_v1` for ordinary attention.
+The 1B study uses seed 1337, 8K context and four GPUs; the 124M recipe uses seeds 1337--1339.
 
-No training corpora, model weights, prediction dumps or historical result archives are included.
-Weights have not yet been uploaded: `checkpoints.json` is an inventory, not a list of available downloads.
+For matched-token/time controls, run `python -m supplement.train --help` with `configs/controls.json`.
+Clock arms require the ordinary-attention summary and midpoint receipt; keep independent token/time cohorts separate.
+Add `--learn-patterns` to a mean arm for the trainable alpha/rho comparison, using the same parent and head set.
+The maturity study uses `python -m supplement.maturity_train` and the dependency graph in `configs/maturity/manifest.json`, with a separate data partition.
+The four-GPU 1B pruning entry point is `python -m scripts.prune_1b`; it requires the full 18,756-update ordinary checkpoint.
 
-## Quick Evaluation
+## Evaluation and Adaptation
 
-Run from the repository root, using an exported model checkpoint:
+Use native nanoGPT checkpoints, not Transformers `AutoModel` files:
 
 ```bash
 python nanogpt/eval_nanogpt_logprobs.py \
@@ -55,5 +75,70 @@ python -m scripts.mqar eval \
   --out outputs/mqar
 ```
 
-Use task-adapted checkpoints for finetuning and MQAR accuracy, not their pretraining parents.
-The checkpoint format is native nanoGPT, not a Transformers `AutoModel` format.
+Use task-adapted checkpoints for downstream and MQAR accuracy, not their pretraining parents.
+For SST-2, BoolQ and QuALITY training, use `nanogpt/finetune_downstream.py` with `--save_ckpt`.
+Run ordinary attention first with `--min_selected_epoch 1`, then pass its internally selected epoch to paired alternatives with `--fixed_epochs`; do not select on official validation results.
+QuALITY uses native 16K checkpoints at 124M and 8K checkpoints at 1B.
+
+`python -m scripts.mqar train --ckpt checkpoints/parent/model.pt --out outputs/mqar-adapted` adapts on eight pairs at 512 tokens, with batch 16, learning rate 1e-4 and 1,500 updates.
+The main pair sweep uses later-intervention matched-time parents and three pretraining seeds; keep midpoint and task-seed controls separate.
+
+## Speed Benchmarks
+
+```bash
+python nanogpt/bench_checkpoint_training.py \
+  --baseline-ckpt checkpoints/ordinary/model.pt --frozen-ckpt checkpoints/saf/model.pt \
+  --T 4096 --B 8 --grad-accum 15 --tokens-per-update 491520
+
+python nanogpt/bench_checkpoint_prefill.py \
+  --baseline-ckpt checkpoints/ordinary16k/model.pt --frozen-ckpt checkpoints/saf16k/model.pt \
+  --T 4096 --B 64 --warmup 20 --iters 80 --repeats 6
+```
+
+Use matching checkpoints, dtypes and GPU allocations.
+The prefill length sweep uses native 16K checkpoints and batch 64; the batch sweep fixes length at 4K.
+CPU reference execution does not measure the reported acceleration.
+
+## Pretrained Qwen
+
+Run from `qwen/` to use its separate GQA implementation (source revision `9b9dc79`):
+
+```bash
+cd qwen
+pip install -r requirements.txt
+python nanogpt/prior_corpus_matrix.py --model Qwen/Qwen3-4B \
+  --corpora fineweb_edu --no_mixed --seq_len 2048 --batch_size 2 \
+  --extract_batches 256 --eval_batches 64 --placement kl_guided \
+  --rates 0,0.1,0.2,0.3 --out_dir outputs/priors
+python nanogpt/fit_for_selector.py --ckpt_dir outputs/priors --signal phv --rate 0.3
+python nanogpt/downstream_eval.py --model Qwen/Qwen3-4B \
+  --ckpt_dir outputs/priors --placement variance_guided --rate 0.1 \
+  --out outputs/tasks-variance10.json
+```
+
+Repeat evaluation at rates 0, 0.2 and 0.3, and with `--placement kl_guided`.
+The downstream protocol uses 512 calibration sequences, not the separate 128-sequence prior set.
+
+## Weights and Tests
+
+Weights are not yet uploaded; `checkpoints.json` records release candidates and source identities, with unresolved hashes marked explicitly.
+Export a trusted training checkpoint without changing tensor precision or dropping fixed-pattern buffers and pruning layouts:
+
+```bash
+python -m scripts.export_checkpoint --source /path/to/training.pt \
+  --out /path/to/hf-staging/model-name --expected-sha256 SOURCE_HASH --trust-source
+
+python -m pytest tests supplement/test_controls.py nanogpt/test_data_sampling.py
+python -m pytest nanogpt/test_distributed_freeze.py
+python kernel/test_fused_attn.py
+```
+
+The distributed test needs local loopback access (`GLOO_SOCKET_IFNAME=lo0` on macOS if required); kernel tests need CUDA.
+The packaged GPU paths and real checkpoint exports still require validation before publication.
+
+## Acknowledgements
+
+Built on [nanoGPT](https://github.com/karpathy/nanoGPT), with its MIT licence and attribution retained in [LICENSE](LICENSE).
+MQAR uses [Zoology revision `1ad20d1`](https://github.com/HazyResearch/zoology/tree/1ad20d193b6113cae1e8f3c655c300d7b4b3f4bb), covered by [zoology/LICENSE](zoology/LICENSE).
+Its generation function is unchanged; this distribution replaces the configuration framework with a minimal return container.
+Datasets and third-party weights remain subject to their upstream terms.

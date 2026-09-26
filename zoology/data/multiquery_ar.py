@@ -5,7 +5,7 @@ import torch
 from zoology.data.types import DataSegment
 
 # The SAF distribution keeps the generator unchanged and omits the upstream
-# training/configuration framework. See THIRD_PARTY.md for the source revision.
+# training/configuration framework. See README.md for the source revision.
 
 def multiquery_ar(
     vocab_size: int,
