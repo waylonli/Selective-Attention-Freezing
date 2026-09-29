@@ -1,8 +1,27 @@
-# Selective Attention Freezing (SAF)
+<h1 align="center">Selective Attention Freezing (SAF)</h1>
 
-**When Can Attention Heads Be Statically Defined?**
+<p align="center">
+  <strong><a href="https://arxiv.org/abs/2609.34650">When Can Attention Heads Be Statically Defined?</a></strong>
+</p>
 
-**Weixian Waylon Li**, **Yintao Tai**, **Marcio Fonseca** and **Shay B. Cohen**.
+<p align="center">
+  Weixian Waylon Li &middot; Yintao Tai &middot; Marcio Fonseca &middot; Shay B. Cohen
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2609.34650"><img src="https://img.shields.io/badge/arXiv-2609.34650-A44A56?style=flat" alt="Paper on arXiv"></a>
+  <a href="https://huggingface.co/waylonli/Selective-Attention-Freezing"><img src="https://img.shields.io/badge/Hugging%20Face-Checkpoints-3B6B7E?style=flat" alt="Checkpoints on Hugging Face"></a>
+  <a href="https://huggingface.co/datasets/waylonli/Selective-Attention-Freezing-data"><img src="https://img.shields.io/badge/Hugging%20Face-Data-827095?style=flat" alt="Evaluation data on Hugging Face"></a>
+</p>
+
+<p align="center">
+  <a href="#installation">Installation</a> &middot;
+  <a href="#released-assets">Downloads</a> &middot;
+  <a href="#data-and-training">Training</a> &middot;
+  <a href="#evaluation-and-adaptation">Evaluation</a> &middot;
+  <a href="#speed-benchmarks">Benchmarks</a> &middot;
+  <a href="#citation">Citation</a>
+</p>
 
 SAF replaces selected attention heads with fixed causal patterns while retaining their input-dependent value projections and token mixing.
 The repository contains native-model training and evaluation (`nanogpt/`), fused kernels (`kernel/`), experiment configurations (`configs/`), controls (`supplement/`) and pretrained Qwen evaluation (`qwen/`).
@@ -26,7 +45,7 @@ Corpora, weights and generated results are not included.
 
 [Checkpoints](https://huggingface.co/waylonli/Selective-Attention-Freezing) and [evaluation data and splits](https://huggingface.co/datasets/waylonli/Selective-Attention-Freezing-data) are hosted on Hugging Face.
 The data release contains the original 124M and 1B validation-token files, nine downstream task/seed partitions, and six MQAR pair-sweep datasets.
-Checkpoint uploads are ongoing; the [live catalogue](https://huggingface.co/waylonli/Selective-Attention-Freezing/blob/main/checkpoints.json) marks available entries as `uploaded`.
+All 225 checkpoint exports are available in the [live catalogue](https://huggingface.co/waylonli/Selective-Attention-Freezing/blob/main/checkpoints.json).
 The download commands use immutable revisions and verify SHA256 checksums:
 
 ```bash
@@ -79,7 +98,10 @@ The four-GPU 1B pruning entry point is `python -m scripts.prune_1b`; it requires
 
 ## Evaluation and Adaptation
 
-Use native nanoGPT checkpoints, not Transformers `AutoModel` files:
+Use native nanoGPT checkpoints, not Transformers `AutoModel` files.
+Use task-adapted checkpoints for downstream and MQAR accuracy, not their pretraining parents.
+
+### Perplexity
 
 ```bash
 python nanogpt/eval_nanogpt_logprobs.py \
@@ -87,31 +109,44 @@ python nanogpt/eval_nanogpt_logprobs.py \
   --data_dir data/release/pretraining/fineweb_edu \
   --start_fraction 0.5 --end_fraction 1.0 --batch_size 1 \
   --out outputs/logprobs.pt
+```
 
+### Downstream Tasks
+
+```bash
 python -m scripts.eval_task \
   --ckpt checkpoints/finetuned/model.pt --task boolq --max-length 512 \
   --out outputs/boolq.json
+```
 
+For SST-2, BoolQ and QuALITY training, use `nanogpt/finetune_downstream.py` with `--save_ckpt`.
+Run ordinary attention first with `--min_selected_epoch 1`, then pass its internally selected epoch to paired alternatives with `--fixed_epochs`; do not select on official validation results.
+QuALITY uses native 16K checkpoints at 124M and 8K checkpoints at 1B.
+
+### Associative Recall (MQAR)
+
+```bash
 python -m scripts.mqar eval \
   --ckpt checkpoints/mqar/model.pt --length 512 --pairs 8 16 24 32 48 64 \
   --out outputs/mqar
 ```
-
-Use task-adapted checkpoints for downstream and MQAR accuracy, not their pretraining parents.
-For SST-2, BoolQ and QuALITY training, use `nanogpt/finetune_downstream.py` with `--save_ckpt`.
-Run ordinary attention first with `--min_selected_epoch 1`, then pass its internally selected epoch to paired alternatives with `--fixed_epochs`; do not select on official validation results.
-QuALITY uses native 16K checkpoints at 124M and 8K checkpoints at 1B.
 
 `python -m scripts.mqar train --ckpt checkpoints/parent/model.pt --out outputs/mqar-adapted` adapts on eight pairs at 512 tokens, with batch 16, learning rate 1e-4 and 1,500 updates.
 The main pair sweep uses later-intervention matched-time parents and three pretraining seeds; keep midpoint and task-seed controls separate.
 
 ## Speed Benchmarks
 
+### Training Updates
+
 ```bash
 python nanogpt/bench_checkpoint_training.py \
   --baseline-ckpt checkpoints/ordinary/model.pt --frozen-ckpt checkpoints/saf/model.pt \
   --T 4096 --B 8 --grad-accum 15 --tokens-per-update 491520
+```
 
+### Causal Prefill
+
+```bash
 python nanogpt/bench_checkpoint_prefill.py \
   --baseline-ckpt checkpoints/ordinary16k/model.pt --frozen-ckpt checkpoints/saf16k/model.pt \
   --T 4096 --B 64 --warmup 20 --iters 80 --repeats 6
@@ -158,6 +193,20 @@ python kernel/test_fused_attn.py
 The distributed test needs local loopback access (`GLOO_SOCKET_IFNAME=lo0` on macOS if required); kernel tests need CUDA.
 Published checkpoints pass strict loading and bitwise original/exported BF16-logit checks on CUDA; their `metadata.json` files record the validation scope.
 Kernel correctness tests are separate from export checks.
+
+## Citation
+
+```bibtex
+@misc{li2026attentionheadsstaticallydefined,
+  title={When Can Attention Heads Be Statically Defined?},
+  author={Weixian Waylon Li and Yintao Tai and Marcio Fonseca and Shay B. Cohen},
+  year={2026},
+  eprint={2609.34650},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2609.34650},
+}
+```
 
 ## Acknowledgements
 
